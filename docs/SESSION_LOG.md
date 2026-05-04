@@ -37,3 +37,26 @@ A running log of what gets built each session, what deviates from the plan, and 
 ---
 
 <!-- New entries below this line -->
+
+## Session 1 (part 1) — Environment, git, GitHub push
+
+**Date:** 2026-05-04
+**Driver:** Mohit (founder) + Claude (claude.ai conversation) + Claude Code
+**Goal:** Environment verification, git init, GitHub push. Vercel and Supabase setup deferred to later in Session 1.
+
+**Built / done:**
+- Verified local environment on Mac (Node 20, `npm install`, all 4 checks passed: typecheck, lint, test, build)
+- Fixed one scaffold bug: removed `@typescript-eslint/no-unused-vars` from `.eslintrc.json` (rule plugin not installed)
+- Removed Vertex AI routing from `~/.claude/settings.json` (was blocking Claude Code with quota errors); backed up to `settings.json.vertex-backup`
+- Initialized git, created first commit (`cb256e7`) with conventional-commits format and `Co-Authored-By: Claude` trailer
+- Created private GitHub repo at https://github.com/mohitamazon75-cmd/Sandhya
+- Pushed `main` with `-u` upstream tracking
+
+**Deviations from plan:** None on the build side. Vercel and Supabase setup pushed to later in Session 1 rather than a separate session.
+
+**Open questions for next part:**
+- Domain & trademark verification for "Sandhya" — Mohit to check `instantdomainsearch.com` and Indian trademark registry (still deferred from Session 0)
+- Hindi voice register samples — Mohit to provide 2–3 in-voice and 2–3 out-of-voice examples (VOICE.md §2) (still deferred from Session 0)
+- Vercel account ready to use? Supabase account ready to use?
+
+---
